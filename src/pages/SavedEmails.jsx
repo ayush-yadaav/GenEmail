@@ -11,7 +11,7 @@ function SavedEmails() {
     const SavedEmails = JSON.parse(localStorage.getItem("generatedEmails")) || [];
     setemails(SavedEmails);
   }, []);
-
+  
   const handleDelete = (indexToRemove) => {
     const updatedEmails = emails.filter((_, index) => index !== indexToRemove);
     setemails(updatedEmails);
